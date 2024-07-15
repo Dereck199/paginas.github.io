@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Online</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendizaje Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#cursos">Oferta de Cursos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cursos">
+            <h2>Cursos Disponibles</h2>
+            <div class="curso">
+                <h3>Introducción a JavaScript</h3>
+                <p>Domina los fundamentos de JavaScript para desarrollo web</p>
+                <button onclick="registrarCurso('Introducción a JavaScript')">Inscribirse</button>
+            </div>
+            <div class="curso">
+                <h3>Diseño Gráfico Avanzado</h3>
+                <p>Aprende técnicas avanzadas de diseño gráfico y crea proyectos impresionantes</p>
+                <button onclick="registrarCurso('Diseño Gráfico Avanzado')">Inscribirse</button>
+            </div>
+        </section>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una plataforma líder en educación en línea, ofreciendo una amplia gama de cursos en diversas áreas del conocimiento.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
